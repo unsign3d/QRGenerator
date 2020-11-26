@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		291B19D8256FCC4900112B7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291B19D7256FCC4900112B7C /* Preview Assets.xcassets */; };
 		291B19E4256FCC4900112B7C /* QR_generatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B19E3256FCC4900112B7C /* QR_generatorTests.swift */; };
 		291B19EF256FCC4900112B7C /* QR_generatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B19EE256FCC4900112B7C /* QR_generatorUITests.swift */; };
+		291B1A01256FCD2F00112B7C /* EFQRCode in Frameworks */ = {isa = PBXBuildFile; productRef = 291B1A00256FCD2F00112B7C /* EFQRCode */; };
+		2943FA6F256FF18100C4B1B7 /* QRSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943FA6E256FF18100C4B1B7 /* QRSerivce.swift */; };
+		2943FA70256FF18100C4B1B7 /* QRSerivce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943FA6E256FF18100C4B1B7 /* QRSerivce.swift */; };
+		2943FA75256FF3CE00C4B1B7 /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943FA74256FF3CE00C4B1B7 /* QRViewModel.swift */; };
+		2943FA76256FF3CE00C4B1B7 /* QRViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2943FA74256FF3CE00C4B1B7 /* QRViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,8 @@
 		291B19EA256FCC4900112B7C /* QR generatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "QR generatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		291B19EE256FCC4900112B7C /* QR_generatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QR_generatorUITests.swift; sourceTree = "<group>"; };
 		291B19F0256FCC4900112B7C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2943FA6E256FF18100C4B1B7 /* QRSerivce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRSerivce.swift; sourceTree = "<group>"; };
+		2943FA74256FF3CE00C4B1B7 /* QRViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				291B1A01256FCD2F00112B7C /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,6 +110,8 @@
 				291B19D9256FCC4900112B7C /* Info.plist */,
 				291B19DA256FCC4900112B7C /* QR_generator.entitlements */,
 				291B19D6256FCC4900112B7C /* Preview Content */,
+				2943FA6E256FF18100C4B1B7 /* QRSerivce.swift */,
+				2943FA74256FF3CE00C4B1B7 /* QRViewModel.swift */,
 			);
 			path = "QR generator";
 			sourceTree = "<group>";
@@ -148,6 +158,9 @@
 			dependencies = (
 			);
 			name = "QR generator";
+			packageProductDependencies = (
+				291B1A00256FCD2F00112B7C /* EFQRCode */,
+			);
 			productName = "QR generator";
 			productReference = 291B19CD256FCC4800112B7C /* QR generator.app */;
 			productType = "com.apple.product-type.application";
@@ -219,6 +232,9 @@
 				Base,
 			);
 			mainGroup = 291B19C4256FCC4800112B7C;
+			packageReferences = (
+				291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */,
+			);
 			productRefGroup = 291B19CE256FCC4800112B7C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,6 +279,8 @@
 			files = (
 				291B19D3256FCC4800112B7C /* ContentView.swift in Sources */,
 				291B19D1256FCC4800112B7C /* QR_generatorApp.swift in Sources */,
+				2943FA6F256FF18100C4B1B7 /* QRSerivce.swift in Sources */,
+				2943FA75256FF3CE00C4B1B7 /* QRViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +288,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2943FA70256FF18100C4B1B7 /* QRSerivce.swift in Sources */,
 				291B19E4256FCC4900112B7C /* QR_generatorTests.swift in Sources */,
+				2943FA76256FF3CE00C4B1B7 /* QRViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +605,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:EFPrefix/EFQRCode.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		291B1A00256FCD2F00112B7C /* EFQRCode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */;
+			productName = EFQRCode;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 291B19C5256FCC4800112B7C /* Project object */;
 }
