@@ -18,6 +18,15 @@
           "revision": "53da4ea930345cb3c7d72a0e639d3318179722b4",
           "version": "1.2.0"
         }
+      },
+      {
+        "package": "SwiftyImageIO",
+        "repositoryURL": "https://github.com/S2Ler/SwiftyImageIO.git",
+        "state": {
+          "branch": null,
+          "revision": "f90fe0ba7209ee17f562a563c6a9739e44c2aa15",
+          "version": "0.4.0"
+        }
       }
     ]
   },

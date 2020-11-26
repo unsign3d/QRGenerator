@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2911654F257006A500959078 /* SwiftyImageIO in Frameworks */ = {isa = PBXBuildFile; productRef = 2911654E257006A500959078 /* SwiftyImageIO */; };
 		291B19D1256FCC4800112B7C /* QR_generatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B19D0256FCC4800112B7C /* QR_generatorApp.swift */; };
 		291B19D3256FCC4800112B7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B19D2256FCC4800112B7C /* ContentView.swift */; };
 		291B19D5256FCC4900112B7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 291B19D4256FCC4900112B7C /* Assets.xcassets */; };
@@ -60,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2911654F257006A500959078 /* SwiftyImageIO in Frameworks */,
 				291B1A01256FCD2F00112B7C /* EFQRCode in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +162,7 @@
 			name = "QR generator";
 			packageProductDependencies = (
 				291B1A00256FCD2F00112B7C /* EFQRCode */,
+				2911654E257006A500959078 /* SwiftyImageIO */,
 			);
 			productName = "QR generator";
 			productReference = 291B19CD256FCC4800112B7C /* QR generator.app */;
@@ -234,6 +237,7 @@
 			mainGroup = 291B19C4256FCC4800112B7C;
 			packageReferences = (
 				291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */,
+				2911654D257006A500959078 /* XCRemoteSwiftPackageReference "SwiftyImageIO" */,
 			);
 			productRefGroup = 291B19CE256FCC4800112B7C /* Products */;
 			projectDirPath = "";
@@ -607,6 +611,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2911654D257006A500959078 /* XCRemoteSwiftPackageReference "SwiftyImageIO" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/S2Ler/SwiftyImageIO.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
 		291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:EFPrefix/EFQRCode.git";
@@ -618,6 +630,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2911654E257006A500959078 /* SwiftyImageIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2911654D257006A500959078 /* XCRemoteSwiftPackageReference "SwiftyImageIO" */;
+			productName = SwiftyImageIO;
+		};
 		291B1A00256FCD2F00112B7C /* EFQRCode */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 291B19FF256FCD2F00112B7C /* XCRemoteSwiftPackageReference "EFQRCode" */;

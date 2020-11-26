@@ -6,8 +6,6 @@
 //
 
 import SwiftUI
-import AppKit
-
 
 struct ContentView: View {
   
@@ -18,8 +16,14 @@ struct ContentView: View {
       VStack {
         Text("Create QR codes").font(.title)
         TextEditor(text: $model.text)
+        Button(action: {
+          model.saveImage()
+        }) {
+          Text("Save image")
+        }
       }
-      .frame(minWidth: 250, maxWidth: .infinity, minHeight: 250, maxHeight: .infinity, alignment: .topLeading)
+      .frame(minWidth: 250, maxWidth: .infinity, minHeight: 250,
+        maxHeight: .infinity, alignment: .topLeading)
       Image(decorative: model.generateImage()!, scale: 2.5, orientation: Image.Orientation.up)
     }
   }
